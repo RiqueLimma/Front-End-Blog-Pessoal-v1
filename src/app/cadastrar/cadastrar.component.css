@@ -1,12 +1,12 @@
-#img-bg {
+.fundo {
 
   background-image: url('../../assets/imgfundo/fundocadastrar.jpg');
 
   min-height: 100vh;
 
-  background-position: center;
+  background-position:center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: center;
 
 
 }
