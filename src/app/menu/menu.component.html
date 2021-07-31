@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+<nav class="navbar navbar-expand-lg navbar-info bg-info ">
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,10 +7,10 @@
     <ul class="navbar-nav mr-auto d-flex align-items-center"> <!--flex do usuario -->
       <li class="nav-item active">
        <!--imagem do usuario-->
-       <img src="../../assets/imgfundo/rique.jpg" alt="imagens do user" width="50px"  height="50px" class="img-fluid rounded-circle">
+       <img src="{{foto}}" alt="imagens do user" width="50px"  height="50px" class="img-fluid rounded-circle">
       </li>
       <li class="nav-item pl-3">
-       <p class="m-0 font-weight-bold text-white fs-16">Nome do Usuário</p> <!--class da fonte usuario-->
+       <p class="m-0 font-weight-bold text-white fs-16">Olá, {{nome}}</p> <!--class da fonte usuario-->
       </li>
 
       <li class="nav-item pl-3">
@@ -22,7 +22,7 @@
 
         <ul class="navbar-nav ml-auto d-flex align-items-center">
           <li class="nav-item pl-3">
-            <a class="m-0 font-weight-bold text-white fs-15">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a> <!--class da fonte usuario-->
+            <a (click)='sair()'class="m-0 font-weight-bold text-white fs-15">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a> <!--class da fonte usuario-->
            </li>
 
         </ul>
