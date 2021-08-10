@@ -16,11 +16,11 @@ export class PostagemService {
   }
 
   getAllPostagens(): Observable<Postagem[]>{
-    return this.http.get<Postagem[]>('https://riquelima.herokuapp.com/postagens', this.token)
+    return this.http.get<Postagem[]>('https://riquelima.herokuapp.com/postagens')
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.post<Postagem>('https://riquelima.herokuapp.com/postagens', postagem, this.token)
+    return this.http.post<Postagem>('https://riquelima.herokuapp.com/postagens', postagem)
   }
 
 }
